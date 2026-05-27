@@ -17,7 +17,7 @@ This repository contains the Unity project developed for the paper *"Comparing t
 The project implements and evaluates eighteen Deep Learning algorithms — eight off-policy Deep Reinforcement Learning (DRL) variants of DQN and ten Neuroevolution (NE) algorithms — across three custom stealth game environments built in Unity. 
 
 > **Citation:** [Paper DOI placeholder — to be updated upon publication]  
-> **Archived repository:** [Zenodo DOI placeholder — to be updated]
+> **Archived repository:** [![DOI](https://zenodo.org/badge/1251660042.svg)](https://doi.org/10.5281/zenodo.20418839)
 
 ---
 
