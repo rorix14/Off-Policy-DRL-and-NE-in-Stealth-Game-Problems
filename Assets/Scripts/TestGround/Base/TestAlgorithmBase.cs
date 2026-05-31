@@ -8,6 +8,7 @@ namespace TestGround.Base
         public bool IsFinished;
         public List<float> Rewards;
         public List<float> Loss;
+        public float[] EpisodeSteps;
 
         public abstract string GetDescription();
     }

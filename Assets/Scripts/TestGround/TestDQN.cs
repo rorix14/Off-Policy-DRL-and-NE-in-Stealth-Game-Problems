@@ -54,8 +54,10 @@ namespace TestGround
         private void Awake()
         {
             _env = FindObjectOfType<StealthGameEnv>();
+            
             Rewards = new List<float>(numberOfEpisodes);
             Loss = new List<float>(numberOfEpisodes);
+            EpisodeSteps = new float[numberOfEpisodes];
             for (int i = 0; i < Rewards.Capacity; i++)
             {
                 Rewards.Add(0f);
@@ -132,6 +134,7 @@ namespace TestGround
 
             _currentSate = stepInfo.Observation;
             Rewards[_episodeIndex] += stepInfo.Reward;
+            EpisodeSteps[_episodeIndex] += 1;
             ++_totalIteration;
 
             if (!stepInfo.Done) return;

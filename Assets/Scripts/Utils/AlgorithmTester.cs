@@ -148,6 +148,8 @@ namespace Utils
                 _currentAlgorithm.Rewards.ToArray();
             _testResults[_currentAlgorithmIndex].algorithmStatsArray[_currenTest].loss =
                 _currentAlgorithm.Loss.ToArray();
+            _testResults[_currentAlgorithmIndex].algorithmStatsArray[_currenTest].episodeSteps =
+                _currentAlgorithm.EpisodeSteps;
         }
 
         private void SaveTestDataToFile()
@@ -181,11 +183,13 @@ namespace Utils
         {
             public float[] rewards;
             public float[] loss;
+            public float[] episodeSteps;
 
-            public AlgorithmStats(float[] rewards, float[] loss)
+            public AlgorithmStats(float[] rewards, float[] loss,  float[] episodeSteps)
             {
                 this.rewards = rewards;
                 this.loss = loss;
+                this.episodeSteps = episodeSteps;
             }
         }
     }

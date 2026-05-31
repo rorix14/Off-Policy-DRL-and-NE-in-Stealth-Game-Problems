@@ -54,8 +54,8 @@ MonoBehaviour:
   batchSize: 32
   gamma: 0.99
   activationFunction: 1
-  learningRate: 0.0005
-  decayRate: 0.00001
+  learningRate: 0.001
+  decayRate: 0.0001
   neuronNumber: 128
   weightsInitStd: 0.005
   supportSize: 51
